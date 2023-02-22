@@ -14,7 +14,7 @@ import { ProductAlertsComponent } from './product-alerts/product-alerts.componen
     BrowserModule,
     ReactiveFormsModule,
     RouterModule.forRoot([
-      { path: '', component: ProductListComponent },
+      {path: '', component: ProductListComponent},
     ])
   ],
   declarations: [
@@ -23,6 +23,10 @@ import { ProductAlertsComponent } from './product-alerts/product-alerts.componen
     ProductListComponent,
     ProductItemComponent,
     ProductAlertsComponent
+  ],
+  exports: [
+    ProductAlertsComponent,
+    ProductItemComponent
   ],
   bootstrap: [
     AppComponent
